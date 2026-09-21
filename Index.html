@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Calen's textbot</title>
+	
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h1>CalBot</h1>
+
+	<p>What you wanna talk about:</p>
+	
+	<input type="text" id="userInput" placeholder="Type something...">
+
+	<button onclick="respond()">Send</button>
+	
+	<p id="response"></p>
+
+	<img id="resultImage" src="" alt="" style="display: none;">
+
+	<script src="script.js"></script>
+<script>
+		document.getElementById("userInput").addEventListener("keydown", function(event) {
+			if (event.key === "Enter") {
+				respond();
+		}
+	});
+</script>
+
+ 
+</body>
+
+
+</html>
